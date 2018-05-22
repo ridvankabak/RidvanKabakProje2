@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 20.May.2018 21:39:10 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.Ogretimuyesi" table="ogretimuyesi" catalog="obs" optimistic-lock="version">
+        <id name="idOgretimuyesi" type="java.lang.Integer">
+            <column name="id_ogretimuyesi" />
+            <generator class="identity" />
+        </id>
+        <property name="sicilNoOgretimuyesi" type="string">
+            <column name="sicilNo_ogretimuyesi" length="45" />
+        </property>
+        <property name="adOgretimuyesi" type="string">
+            <column name="ad_ogretimuyesi" length="45" />
+        </property>
+        <property name="soyadOgretimuyesi" type="string">
+            <column name="soyad_ogretimuyesi" length="45" />
+        </property>
+        <property name="sehirOgretimuyesi" type="string">
+            <column name="sehir_ogretimuyesi" length="45" />
+        </property>
+        <property name="telNoOgretimuyesi" type="string">
+            <column name="telNo_ogretimuyesi" length="11" />
+        </property>
+    </class>
+</hibernate-mapping>
